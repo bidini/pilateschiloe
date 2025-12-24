@@ -1,0 +1,221 @@
+/* Logo in navigation menu */
+
+/* Desktop - horizontal menu with logo */
+#header nav a[href="#menu"] {
+    display: none !important;
+}
+
+.nav-logo {
+    display: inline-block;
+    padding: 0;
+}
+
+.nav-logo img {
+    height: 4em;  /* Match text height */
+    width: auto;
+    vertical-align: middle;
+    display: block;
+}
+
+#nav {
+    display: block !important;
+}
+
+#nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 2em;
+}
+
+#nav ul li {
+    display: inline-block;
+}
+
+#nav ul li a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 0;
+}
+
+/* Mobile - hide horizontal nav, show hamburger */
+@media screen and (max-width: 980px) {
+    #nav {
+        display: none !important;  /* Hide horizontal menu */
+    }
+    
+    /* Show hamburger menu button */
+    #header nav a[href="#menu"] {
+        display: inline-block !important;
+    }
+}
+
+
+/* Logo styling */
+.logo img {
+    height: 20.5em;  /* Adjust height as needed */
+    width: auto;
+    display: block;
+    border-bottom: 0;
+}
+
+/* Remove text formatting from logo link */
+.logo strong, .logo span {
+    display: none;
+}
+
+/* Banner background color */
+#banner {
+    background-color: #7893c9 !important;
+    background-image: none !important;  /* Remove default background image */
+}
+#contact {
+    background-color: #7893c9 !important;
+    background-image: none !important;  /* Remove default background image */
+}
+#footer {
+    background-color: #7893c9 !important;
+    background-image: none !important;  /* Remove default background image */
+}
+
+/* Optional: Adjust text color for better contrast */
+#banner h1, #banner p {
+    color: #ffffff;
+}
+
+#banner .button {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+#banner .button:hover {
+    background-color: #ffffff;
+    color: #7893C9;
+}
+
+/* Center banner content */
+#banner .inner {
+    text-align: center;
+}
+
+#banner .logo {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+#banner .content {
+    margin: 0 auto;
+}
+
+#banner .actions {
+    justify-content: center;
+}
+
+
+/* Add uniform background color to the :before overlay */
+.tiles article:before {
+    background-color: rgba(100, 115, 140, 0.85) !important;
+    opacity: 1;
+}
+
+/* Keep existing :after layer */
+.tiles article:after {
+    background-color: rgba(36, 41, 67, 0.25);
+}
+
+/* Hover effect still works */
+.tiles article:hover:before {
+    opacity: 0;
+}
+
+/* Image background for banner */
+#banner-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ensures video covers entire area */
+    z-index: 0;  /* Behind all content */
+}
+
+/* Video background for banner */
+#banner-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ensures video covers entire area */
+    z-index: 0;  /* Behind all content */
+}
+
+/* Ensure banner content appears above video */
+#banner .inner {
+    position: relative;
+    z-index: 2;
+}
+
+/* Optional: Add overlay for better text readability */
+#banner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(120, 147, 201, 0.3);  /* Light overlay */
+    z-index: 1;
+}
+
+/* Darker input fields for contact section */
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    background-color: #4a6491 !important;  /* Darker blue */
+    border-color: #3d5478 !important;
+    color: #ffffff !important;
+}
+
+/* Placeholder text */
+#contact input::placeholder,
+#contact textarea::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Focus state */
+#contact input[type="text"]:focus,
+#contact input[type="email"]:focus,
+#contact textarea:focus {
+    background-color: #3d5478 !important;
+    border-color: #ffffff !important;
+}
+
+/* Labels */
+#contact label {
+    color: #ffffff;
+}
+
+/* Contact info text */
+#contact .contact-method h3,
+#contact .contact-method span,
+#contact .contact-method a {
+    color: #ffffff;
+}
+
+/* Remove underline/border from logo link */
+.logo,
+.logo a,
+a.logo {
+    border-bottom: 0 !important;
+    text-decoration: none !important;
+}
+
+/* Ensure no hover effects either */
+.logo:hover,
+.logo a:hover,
+a.logo:hover {
+    border-bottom: 0 !important;
+}
+

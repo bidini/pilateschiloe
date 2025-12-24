@@ -10,113 +10,133 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/custom.css" />  <!-- Add this line -->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
-
 		<!-- Wrapper -->
 			<div id="wrapper">
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<a href="index.html" class="logo"><strong>Forty</strong> <span>by HTML5 UP</span></a>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+                        <!-- Desktop horizontal nav -->
+                        <nav id="nav">
+                            <ul>
+                                <li>
+                                    <a href="index.html" class="nav-logo">
+                                        <img src="images/pilates_chiloe_logo.svg" alt="Pilates Chiloé" />
+                                    </a>
+                                </li>
+                                <li><a href="authenticity.html">Autenticidad</a></li>
+                                <li><a href="eugenia.html">Eugenia</a></li>
+                                <li><a href="equipment.html">Equipamiento</a></li>
+                                <li><a href="classes.html">Clases</a></li>
+                                <li><a href="studios.html">Estudios</a></li>
+                                <li><a href="schedule.html">Agenda</a></li>
+                            </ul>
+                        </nav>
+                        <!-- Mobile hamburger -->
+                        <nav>
+                            <a href="#menu">Menu</a>
+                        </nav>
+                        <!-- Menu -->
+                        <nav id="menu">
+                            <ul class="links">
+                                <li>
+                                    <a href="index.html" class="nav-logo">
+                                        <img src="images/pilates_chiloe_logo.svg" alt="Pilates Chiloé" />
+                                    </a>
+                                </li>
+                                <li><a href="authenticity.html">Autenticidad</a></li>
+                                <li><a href="about.html">Eugenia</a></li>
+                                <li><a href="equipment.html">Equipamiento</a></li>
+                                <li><a href="classes.html">Clases</a></li>
+                                <li><a href="studios.html">Estudios</a></li>
+                                <li><a href="schedule.html">Agenda</a></li>
+                            </ul>
+                        </nav>
+                    </header>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<ul class="links">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="landing.html">Landing</a></li>
-							<li><a href="generic.html">Generic</a></li>
-							<li><a href="elements.html">Elements</a></li>
-						</ul>
-						<ul class="actions stacked">
-							<li><a href="#" class="button primary fit">Get Started</a></li>
-							<li><a href="#" class="button fit">Log In</a></li>
-						</ul>
-					</nav>
 
 				<!-- Banner -->
 					<section id="banner" class="major">
+                        <video autoplay muted loop playsinline id="banner-video">
+                            <source src="videos/pilates-background.MP4" type="video/mp4">
+                        </video>
 						<div class="inner">
 							<header class="major">
-								<h1>Hi, my name is Forty</h1>
+                                <a href="" class="logo">
+                                    <img src="images/pilates_chiloe_logo.svg" alt="Pilates Chiloé" />
+                                </a>
 							</header>
+
 							<div class="content">
-								<p>A responsive site template designed by HTML5 UP<br />
-								and released under the Creative Commons.</p>
+								<p>Equipamiento original, método original<br />
+								20 años enseñando en Castro, Chiloé</p>
 								<ul class="actions">
-									<li><a href="#one" class="button next scrolly">Get Started</a></li>
+									<li><a href="#contact" class="button next scrolly">Agenda tu clase</a></li>
 								</ul>
 							</div>
 						</div>
 					</section>
+
 
 				<!-- Main -->
 					<div id="main">
 
 						<!-- One -->
 							<section id="one" class="tiles">
+                                <!-- Tile 1 -->
 								<article>
-									<span class="image">
-										<img src="images/pic01.jpg" alt="" />
-									</span>
+                                    <span class="image"><img src="images/autenticidad.jpg"/></span>
 									<header class="major">
-										<h3><a href="landing.html" class="link">Aliquam</a></h3>
-										<p>Ipsum dolor sit amet</p>
+                                        <h3><a href="authenticity.html" class="link">Autencidad & Tradición</a></h3>
+										<p>Entrenamiento directo proveniente de Inelia Garcia • 30 años de tradición familiar en Pilates</p>
 									</header>
 								</article>
+                                <!-- Tile 2 -->
 								<article>
-									<span class="image">
-										<img src="images/pic02.jpg" alt="" />
-									</span>
+                                    <span class="image"><img src="images/eugenia9.jpg"/></span>
 									<header class="major">
-										<h3><a href="landing.html" class="link">Tempus</a></h3>
-										<p>feugiat amet tempus</p>
+                                        <h3><a href="equipment.html" class="link">Equipamiento Original</a></h3>
+										<p>Reformers clásicos, cadillac, silla wunda, barrel</p>
 									</header>
 								</article>
+                                <!-- Tile 3 -->
 								<article>
-									<span class="image">
-										<img src="images/pic03.jpg" alt="" />
-									</span>
+                                    <span class="image"><img src="images/eugenia.jpg"/></span>
 									<header class="major">
-										<h3><a href="landing.html" class="link">Magna</a></h3>
-										<p>Lorem etiam nullam</p>
+                                        <h3><a href="eugenia.html" class="link">Acerca de Eugenia</a></h3>
+										<p>Instrucción experta basada en los principios clásicos</p>
 									</header>
 								</article>
+                                <!-- Tile 4 -->
 								<article>
-									<span class="image">
-										<img src="images/pic04.jpg" alt="" />
-									</span>
+                                    <span class="image"><img src="images/clases.jpg"/></span>
 									<header class="major">
-										<h3><a href="landing.html" class="link">Ipsum</a></h3>
-										<p>Nisl sed aliquam</p>
+                                        <h3><a href="classes.html" class="link">Clases & Programas</a></h3>
+										<p>Individuales & duplas • Todos los niveles • Programas especializados</p>
 									</header>
 								</article>
+                                <!-- Tile 5 -->
 								<article>
-									<span class="image">
-										<img src="images/pic05.jpg" alt="" />
-									</span>
+                                    <span class="image"><img src="images/equipos.jpg"/></span>
 									<header class="major">
-										<h3><a href="landing.html" class="link">Consequat</a></h3>
-										<p>Ipsum dolor sit amet</p>
+                                        <h3><a href="studios.html" class="link">Nuestros Estudios</a></h3>
+										<p>Centro Castro • Bosque de Nercón</p>
 									</header>
 								</article>
+                                <!-- Tile 6 -->
 								<article>
-									<span class="image">
-										<img src="images/pic06.jpg" alt="" />
-									</span>
+                                    <span class="image"><img src="images/matwall.jpg"/></span>
 									<header class="major">
-										<h3><a href="landing.html" class="link">Etiam</a></h3>
-										<p>Feugiat amet tempus</p>
+                                        <h3><a href="book.html" class="link">Agenda</a></h3>
+										<p>Agenda tu clase</p>
 									</header>
 								</article>
 							</section>
 
-						<!-- Two -->
+						<!-- Two
 							<section id="two">
 								<div class="inner">
 									<header class="major">
@@ -128,7 +148,7 @@
 									</ul>
 								</div>
 							</section>
-
+                         -->
 					</div>
 
 				<!-- Contact -->
@@ -138,21 +158,21 @@
 								<form method="post" action="#">
 									<div class="fields">
 										<div class="field half">
-											<label for="name">Name</label>
+											<label for="name">Nombre</label>
 											<input type="text" name="name" id="name" />
 										</div>
 										<div class="field half">
-											<label for="email">Email</label>
+											<label for="email">Correo electr&oacute;nico</label>
 											<input type="text" name="email" id="email" />
 										</div>
 										<div class="field">
-											<label for="message">Message</label>
+											<label for="message">Mensaje</label>
 											<textarea name="message" id="message" rows="6"></textarea>
 										</div>
 									</div>
 									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Clear" /></li>
+										<li><input type="submit" value="Enviar Mensaje" class="primary" /></li>
+										<li><input type="reset" value="Limpiar" /></li>
 									</ul>
 								</form>
 							</section>
@@ -160,24 +180,15 @@
 								<section>
 									<div class="contact-method">
 										<span class="icon solid alt fa-envelope"></span>
-										<h3>Email</h3>
-										<a href="#">information@untitled.tld</a>
+										<h3>Correo electr&oacute;nico</h3>
+										<a href="#">eugeniaimperatore@gmail.com</a>
 									</div>
 								</section>
 								<section>
 									<div class="contact-method">
 										<span class="icon solid alt fa-phone"></span>
-										<h3>Phone</h3>
-										<span>(000) 000-0000 x12387</span>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-home"></span>
-										<h3>Address</h3>
-										<span>1234 Somewhere Road #5432<br />
-										Nashville, TN 00000<br />
-										United States of America</span>
+										<h3>Tel&eacute;fono & WhatsApp</h3>
+										<span>+56 9 8136 2706</span>
 									</div>
 								</section>
 							</section>
@@ -187,19 +198,16 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<div class="inner">
+                            Síguenos en redes
 							<ul class="icons">
-								<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://www.facebook.com/www.pilateschiloe.cl/" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="https://www.instagram.com/pilateschiloe/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
 							</ul>
 							<ul class="copyright">
-								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+								<li>&copy; Eugenia Zabala, 2025</li><li>Diseño: <a href="https://html5up.net">HTML5 UP</a></li>
 							</ul>
 						</div>
 					</footer>
-
 			</div>
 
 		<!-- Scripts -->
@@ -210,6 +218,5 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
 	</body>
 </html>
