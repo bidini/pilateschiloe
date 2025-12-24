@@ -51,6 +51,74 @@
     }
 }
 
+/* Mobile fixes - Logo and Video */
+@media screen and (max-width: 736px) {
+    /* Much smaller header logo */
+    header .logo img {
+        height: 1.2em !important;
+        max-width: 120px;
+    }
+
+    /* Smaller nav logo */
+    .nav-logo img {
+        height: 1em !important;
+    }
+
+    /* Banner adjustments */
+    #banner {
+        min-height: 50vh !important;
+        height: 50vh !important;
+        max-height: none !important;
+    }
+
+    /* Video - ensure it fits and covers properly */
+    #banner-video {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    /* Banner logo - much smaller */
+    #banner .logo img {
+        max-width: 50% !important;
+        height: auto !important;
+        max-height: 80px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    /* Reduce banner text size */
+    #banner .content p {
+        font-size: 0.85em;
+    }
+
+    #banner .button {
+        font-size: 0.85em;
+        padding: 0.5em 1.5em;
+    }
+
+    /* Reduce banner padding */
+    #banner .inner {
+        padding: 2em 1.5em !important;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 980px) and (min-width: 737px) {
+    header .logo img {
+        height: 1.8em !important;
+    }
+
+    #banner .logo img {
+        max-width: 60% !important;
+        max-height: 100px;
+    }
+}
+
 
 /* Logo styling */
 .logo img {
