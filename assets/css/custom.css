@@ -150,6 +150,29 @@
         text-align: center;
     }
 }
+/* Fix banner button on mobile */
+@media screen and (max-width: 736px) {
+    /* Larger button with better spacing */
+    #banner .button {
+        font-size: 0.9em !important;
+        padding: 0.75em 2em 0.75em 1.5em !important;
+        white-space: nowrap;
+        display: inline-block;
+    }
+
+    /* Alternative: Remove arrow on mobile */
+    #banner .button.next:after {
+        display: none;
+    }
+}
+
+/* Very small screens */
+@media screen and (max-width: 480px) {
+    #banner .button {
+        font-size: 0.8em !important;
+        padding: 0.65em 1.75em 0.65em 1.25em !important;
+    }
+}
 
 
 /* Logo styling */
