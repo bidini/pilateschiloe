@@ -162,7 +162,8 @@
 
     /* Alternative: Remove arrow on mobile */
     #banner .button.next:after {
-        display: none;
+        display: none !important;
+        content: none !important;
     }
 }
 
@@ -229,10 +230,12 @@
 
 #banner .content {
     margin: 0 auto;
+    text-align: center;
 }
 
 #banner .actions {
     justify-content: center;
+    display: flex;
 }
 
 
