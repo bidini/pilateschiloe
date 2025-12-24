@@ -32,7 +32,7 @@
                                 <li><a href="equipment.html">Equipamiento</a></li>
                                 <li><a href="classes.html">Clases</a></li>
                                 <li><a href="studios.html">Estudios</a></li>
-                                <li><a href="schedule.html">Agenda</a></li>
+                                <li><a href="#contact">Agenda</a></li>
                             </ul>
                         </nav>
                         <!-- Mobile hamburger -->
@@ -155,19 +155,28 @@
 					<section id="contact">
 						<div class="inner">
 							<section>
-								<form method="post" action="#">
+								<form method="POST" action="https://formsubmit.co/eugeniaimperatore@gmail.com">
+                                    <!-- Anti-spam honeypot -->
+                                    <input type="text" name="_honey" style="display:none">
+
+                                    <!-- Disable captcha -->
+                                    <input type="hidden" name="_captcha" value="false">
+
+                                    <!-- Redirect after submit -->
+                                    <input type="hidden" name="_next" value="https://pilateschiloe.cl/gracias.html">
+
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Nombre</label>
-											<input type="text" name="name" id="name" />
+											<input type="text" name="name" id="name" required />
 										</div>
 										<div class="field half">
 											<label for="email">Correo electr&oacute;nico</label>
-											<input type="text" name="email" id="email" />
+											<input type="email" name="email" id="email" required />
 										</div>
 										<div class="field">
 											<label for="message">Mensaje</label>
-											<textarea name="message" id="message" rows="6"></textarea>
+											<textarea name="message" id="message" rows="6" required></textarea>
 										</div>
 									</div>
 									<ul class="actions">
