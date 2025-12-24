@@ -165,18 +165,24 @@
                                     <!-- Redirect after submit -->
                                     <input type="hidden" name="_next" value="https://pilateschiloe.cl/gracias.html">
 
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Nombre</label>
-											<input type="text" name="name" id="name" required />
+                                    <!-- Custom subject line in Spanish -->
+                                    <input type="hidden" name="_subject" value="Nuevo mensaje desde Pilates Chiloé">
+
+                                    <!-- Form template (optional - for custom email formatting) -->
+                                    <input type="hidden" name="_template" value="table">
+
+                                    <div class="fields">
+                                        <div class="field half">
+                                            <label for="name">Nombre</label>
+											<input type="text" name="Nombre" id="name" required />
 										</div>
 										<div class="field half">
 											<label for="email">Correo electr&oacute;nico</label>
-											<input type="email" name="email" id="email" required />
+											<input type="email" name="Correo" id="email" required />
 										</div>
 										<div class="field">
 											<label for="message">Mensaje</label>
-											<textarea name="message" id="message" rows="6" required></textarea>
+											<textarea name="Mensaje" id="message" rows="6" required></textarea>
 										</div>
 									</div>
 									<ul class="actions">
