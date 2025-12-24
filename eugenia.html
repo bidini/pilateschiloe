@@ -32,7 +32,7 @@
                                 <li><a href="equipment.html">Equipamiento</a></li>
                                 <li><a href="classes.html">Clases</a></li>
                                 <li><a href="studios.html">Estudios</a></li>
-                                <li><a href="schedule.html">Agenda</a></li>
+                                <li><a href="#contact">Agenda</a></li>
                             </ul>
                         </nav>
                         <!-- Mobile hamburger -->
@@ -52,7 +52,7 @@
                                 <li><a href="equipment.html">Equipamiento</a></li>
                                 <li><a href="classes.html">Clases</a></li>
                                 <li><a href="studios.html">Estudios</a></li>
-                                <li><a href="schedule.html">Agenda</a></li>
+                                <li><a href="#contact">Agenda</a></li>
                             </ul>
                         </nav>
                     </header>
@@ -68,7 +68,7 @@
 							<section id="one">
 								<div class="inner">
 									<header class="major">
-										<h1>Generic</h1>
+										<h1>Acerca de Eugenia</h1>
 									</header>
 									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
@@ -78,23 +78,39 @@
 
 					</div>
 
+
 				<!-- Contact -->
 					<section id="contact">
 						<div class="inner">
 							<section>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Nombre</label>
-											<input type="text" name="name" id="name" />
+								<form method="POST" action="https://formsubmit.co/eugeniaimperatore@gmail.com">
+                                    <!-- Anti-spam honeypot -->
+                                    <input type="text" name="_honey" style="display:none">
+
+                                    <!-- Disable captcha -->
+                                    <input type="hidden" name="_captcha" value="false">
+
+                                    <!-- Redirect after submit -->
+                                    <input type="hidden" name="_next" value="https://pilateschiloe.cl/gracias.html">
+
+                                    <!-- Custom subject line in Spanish -->
+                                    <input type="hidden" name="_subject" value="Nuevo mensaje desde Pilates Chiloé">
+
+                                    <!-- Form template (optional - for custom email formatting) -->
+                                    <input type="hidden" name="_template" value="table">
+
+                                    <div class="fields">
+                                        <div class="field half">
+                                            <label for="name">Nombre</label>
+											<input type="text" name="Nombre" id="name" required />
 										</div>
 										<div class="field half">
 											<label for="email">Correo electr&oacute;nico</label>
-											<input type="text" name="email" id="email" />
+											<input type="email" name="Correo" id="email" required />
 										</div>
 										<div class="field">
 											<label for="message">Mensaje</label>
-											<textarea name="message" id="message" rows="6"></textarea>
+											<textarea name="Mensaje" id="message" rows="6" required></textarea>
 										</div>
 									</div>
 									<ul class="actions">
