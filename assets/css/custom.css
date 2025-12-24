@@ -119,6 +119,38 @@
     }
 }
 
+/* Logo in hamburger menu - larger and centered */
+@media screen and (max-width: 980px) {
+    #menu .nav-logo,
+    #menu a.nav-logo {
+        display: block;
+        text-align: center;
+        padding: 2em 0 1em 0;
+        border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+        margin-bottom: 1em;
+    }
+
+    #menu .nav-logo img {
+        height: 4em !important;  /* Much larger */
+        max-width: 70%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    /* Center all menu items */
+    #menu ul.links {
+        text-align: center;
+    }
+
+    #menu ul.links li {
+        text-align: center;
+    }
+
+    #menu ul.links li a {
+        text-align: center;
+    }
+}
+
 
 /* Logo styling */
 .logo img {
